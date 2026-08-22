@@ -823,3 +823,14 @@ input, textarea { cursor: text; }
   .hero { grid-template-columns: 1.15fr 1fr; }
   .includes, .quote, .about, .start-inner, .page-hero, .split, .page-form-wrap { gap: 48px; }
 }
+
+html.yty-locked body > *:not(#yty-gate) { visibility: hidden !important; }
+#yty-gate { position: fixed; inset: 0; z-index: 100; background: var(--cream); display: flex; align-items: center; justify-content: center; padding: 40px; }
+.yty-gate-card { max-width: 28em; }
+.yty-gate-card h1 { font-size: clamp(42px, 6vw, 64px); margin-bottom: 16px; }
+.yty-gate-lede { margin-bottom: 28px; max-width: 24em; }
+.yty-gate-form { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
+.yty-gate-form label { display: flex; flex-direction: column; gap: 6px; font-size: 14px; letter-spacing: 0.04em; width: 100%; }
+.yty-gate-form input { background: #fff; color: var(--black); border: 2px solid rgba(50, 88, 143, 0.25); border-radius: 7px; padding: 14px 16px; font-size: 16px; width: 100%; max-width: 320px; }
+.yty-gate-form input:focus { outline: none; border-color: var(--orange); box-shadow: 0 0 0 3px rgba(255, 141, 92, 0.35); }
+.yty-gate-hint { font-size: 15px; color: var(--magenta); min-height: 1.2em; }
